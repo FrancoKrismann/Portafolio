@@ -1,0 +1,54 @@
+.containerAbout {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: 20%;
+    /* height: 30%; */
+    flex-basis: 450px;
+    /* flex-grow: 1; */
+    /* max-width: 30em; */
+    
+}
+.containerAbout h1 {   
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 55px;
+    color:white;
+    font-family: "Roboto", "Helvetica Neue";
+    max-width: 100%;
+}
+
+
+
+
+.containerAbout h3 {
+    /* display: block; */
+    /* margin: 20 auto; */
+    padding: 0;
+    font-size: 23px;
+    color:white;
+    font-family: "Roboto", "Helvetica Neue";
+    /* white-space: nowrap; */
+    /* border-right:4px solid; */
+    width: 28ch;
+    max-width: 100%;
+}
+
+@keyframes typing {
+    from {width:0}
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+.containerImage {
+    display: flex;
+    border: 2px solid rgb(22, 215, 106);
+    width: 20em;
+    justify-content: center;
+    height: 35%;
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 14em;
+}
