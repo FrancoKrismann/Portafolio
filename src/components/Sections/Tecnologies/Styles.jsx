@@ -1,0 +1,88 @@
+import styled from "styled-components"
+
+export const Tencnologycontainer = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-direction: column;
+width: 100%;
+background-color: #1C2541;
+
+ .containerTitle  {
+   align-self:center; 
+   margin: 0;
+   width: 50%;
+   
+   /* border: 1px solid yellow; */
+}
+ .containerTitle h3 {
+   color:#ffff;
+   font-size: 35px;
+   /* font-weight: 600; */
+   font-family: Poppins, sans-serif;
+   text-transform: uppercase;
+}
+`
+
+export const Container = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap:20px;
+width: 40%;
+margin:30px auto;
+/* border: 1px solid green; */
+
+/* height: 20vh; */
+`
+
+
+export const CardContainer = styled.div`
+display: flex;
+/* width: 13vh; */
+margin: 10px auto;
+background-color: #0B132B;
+height: 10vh;
+padding: 5px;
+border-radius: 10%;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+overflow: hidden;
+cursor: pointer;
+
+.card-text {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+&:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Efecto de elevación en hover */
+  
+}
+&:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Fondo borroso en hover */
+  z-index: -1; /* Coloca el fondo borroso detrás de la tarjeta */
+}
+
+&:hover .card-text {
+  opacity: 1;
+}
+`

@@ -7,10 +7,9 @@ export default function Home() {
   return (
     <HomeContainer>
         <div className={styles.containerAbout}>
-          <div className={styles.flexContainer}>
-            <h1>Franco Krismann</h1>
+            <h1>¡Hola Mundo!</h1>
+            <h2>Mi nombre es Franco Krismann</h2>
             <h3>Desarrollador Web Full Stack</h3>
-          </div>
         </div>
         <div className={styles.containerImage}>
             <img src={image} alt="perfil"/>
