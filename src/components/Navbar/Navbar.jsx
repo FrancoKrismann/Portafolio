@@ -13,11 +13,11 @@ export default function Navbar() {
   return (
     <NavContainer >
         <div className={`links ${clicked ? "active" : ""}`}>
-            <a onClick={handleButton} href="#">Inicio</a>
-            <a onClick={handleButton} href="#">Sobre mi</a>
-            <a onClick={handleButton} href="#">Tecnologias</a>
-            <a onClick={handleButton} href="#">Proyectos</a>
-            <a onClick={handleButton} href="#">Contacto</a>
+            <a onClick={handleButton} href="#Home">Inicio</a>
+            <a onClick={handleButton} href="#About">Sobre mi</a>
+            <a onClick={handleButton} href="#Tech">Tecnologias</a>
+            <a onClick={handleButton} href="#Proyects">Proyectos</a>
+            <a onClick={handleButton} href="#Contact">Contacto</a>
         </div>
         <div className='button'>
             <Button clicked={clicked} handleButton={handleButton}/>

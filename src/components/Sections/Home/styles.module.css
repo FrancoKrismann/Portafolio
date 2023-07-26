@@ -1,15 +1,16 @@
 .containerAbout {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
-    width: 20%;
+    align-items: center;
+    /* border: 2px solid blue; */
+    width: 55vh;
     /* height: 30%; */
-    flex-basis: 450px;
+    /* flex-basis: 450px; */
     /* flex-grow: 1; */
     /* max-width: 30em; */
     
 }
-.containerAbout h1 {   
+.containerAbout h2,h1 {   
     margin: 0;
     padding: 0;
     font-weight: 800;
@@ -35,20 +36,20 @@
     max-width: 100%;
 }
 
-@keyframes typing {
+/* @keyframes typing {
     from {width:0}
 }
 
 @keyframes blink {
     50% { border-color: transparent;}
-}
+} */
 .containerImage {
     display: flex;
-    border: 2px solid rgb(22, 215, 106);
+    /* border: 2px solid rgb(22, 215, 106); */
     width: 20em;
     justify-content: center;
     height: 35%;
-    flex-basis: 200px;
+    flex-basis: 250px;
     flex-grow: 1;
     max-width: 14em;
 }

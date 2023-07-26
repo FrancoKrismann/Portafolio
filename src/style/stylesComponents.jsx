@@ -139,7 +139,19 @@ align-content: center;
 width: 80%;
 max-width: 1620px;
 height: 600px;
-border: 2px solid orange;
+/* border: 2px solid orange; */
 gap: 20px;
 flex-wrap: wrap;
+`
+export const PageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* max-width: 1918px; */
+    /* overflow: hidden; */
+    width: 100%;
+    /* height: 100%; */
+    background-color:#134074 ;
+
 `
