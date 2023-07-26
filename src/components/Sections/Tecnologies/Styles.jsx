@@ -15,13 +15,19 @@ background-color: #1C2541;
    width: 50%;
    
    /* border: 1px solid yellow; */
-}
- .containerTitle h3 {
-   color:#ffff;
+   h3 {
+     color:#ffff;
    font-size: 35px;
    /* font-weight: 600; */
    font-family: Poppins, sans-serif;
    text-transform: uppercase;
+   margin:40px 0 0 0;
+   }
+
+   div {
+    border-bottom: 2px solid #6FFFE9;
+    width: 27%;
+   }
 }
 `
 
@@ -54,8 +60,14 @@ cursor: pointer;
 
 .card-text {
   position: absolute;
-  bottom: 35px;
+  display: flex;
+align-items:center;
+justify-content: center;
+  bottom: 0px;
   left: 50%;
+  width: 10vh;
+  height:10vh;
+
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
@@ -64,6 +76,10 @@ cursor: pointer;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  span {
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
 
 &:hover {
@@ -78,11 +94,11 @@ cursor: pointer;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px); /* Fondo borroso en hover */
+  backdrop-filter: blur(10px); /* Fondo borroso en hover */
   z-index: -1; /* Coloca el fondo borroso detrás de la tarjeta */
 }
 
 &:hover .card-text {
-  opacity: 1;
+  opacity:0.7;
 }
 `

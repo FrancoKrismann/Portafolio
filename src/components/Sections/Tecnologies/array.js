@@ -33,7 +33,7 @@ export const Tencology = [
   },
   {
     id: 4,
-    name: "TYPESCRIP",
+    name: "TYPESCRIPT",
     image: typescript,
   },
   {
