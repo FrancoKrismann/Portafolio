@@ -47,27 +47,40 @@ margin:30px auto;
 
 export const CardContainer = styled.div`
 display: flex;
-/* width: 13vh; */
 margin: 10px auto;
 background-color: #0B132B;
-height: 10vh;
+height: 9vh;
 padding: 5px;
 border-radius: 10%;
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 transition: box-shadow 0.3s ease, transform 0.3s ease;
 overflow: hidden;
 cursor: pointer;
+position: relative; /* Agregar posición relativa al contenedor de la tarjeta */
+
+/* Estilo para el fondo borroso */
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  z-index: -1; /* Colocar el fondo borroso detrás de la tarjeta */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+}
 
 .card-text {
   position: absolute;
   display: flex;
-align-items:center;
-justify-content: center;
-  bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
   left: 50%;
   width: 10vh;
-  height:10vh;
-
+  height: 10vh;
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
@@ -76,29 +89,25 @@ justify-content: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+
   span {
     font-size: 15px;
     font-weight: 600;
+    z-index: 2;
   }
 }
 
 &:hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px); /* Efecto de elevación en hover */
-  
 }
+
+/* Mostrar el fondo borroso en el hover */
 &:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px); /* Fondo borroso en hover */
-  z-index: -1; /* Coloca el fondo borroso detrás de la tarjeta */
+  opacity: 1;
 }
 
 &:hover .card-text {
-  opacity:0.7;
+  opacity: 0.7;
 }
 `
