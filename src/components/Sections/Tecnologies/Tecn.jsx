@@ -4,7 +4,8 @@ import {Tencnologycontainer, CardContainer, Container} from "./Styles"
 export default function Tecn() {
   return (
     <Tencnologycontainer id='Tech'>
-      <div className='containerTitle'>
+      <div className='container'>
+        <div className='containerTitle'>
         <h3>Tecnologias</h3>
         <div></div>
       </div>
@@ -24,6 +25,8 @@ export default function Tecn() {
                 )
             }
         </Container>
+      </div>
+      
     </Tencnologycontainer>
   )
 }

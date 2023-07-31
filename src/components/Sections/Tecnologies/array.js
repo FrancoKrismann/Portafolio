@@ -18,57 +18,57 @@ import sequelize from "../../../images/sequelize_original_logo_icon_146348.png";
 export const Tencology = [
   {
     id: 1,
-    name: "HTML",
+    name: "Html",
     image: html,
   },
   {
     id: 2,
-    name: "CSS",
+    name: "Css",
     image: css,
   },
   {
     id: 3,
-    name: "JAVASCRIPT",
+    name: "Javascript",
     image: js,
   },
   {
     id: 4,
-    name: "TYPESCRIPT",
+    name: "Typescript",
     image: typescript,
   },
   {
     id: 5,
-    name: "REACT",
+    name: "React.js",
     image: react,
   },
   {
     id: 6,
-    name: "REDUX",
+    name: "Redux",
     image: redux,
   },
   {
     id: 7,
-    name: "NODE.JS",
+    name: "Node.js",
     image: node,
   },
   {
     id: 8,
-    name: "EXPRESS",
+    name: "Express",
     image: express,
   },
   {
     id: 9,
-    name: "POSTGRESQL",
+    name: "PostgreSQL",
     image: postgre,
   },
   {
     id: 10,
-    name: "MONGODB",
+    name: "MongoDB",
     image: mongo,
   },
   {
     id: 11,
-    name: "SEQUELIZE",
+    name: "Sequelize",
     image: sequelize,
   },
   {

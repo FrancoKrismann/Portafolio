@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./styles.module.css"
-import { Home ,About, Tecn, Proyects} from '../Sections'
+import { Home ,About, Tecn, Proyects, Contact} from '../Sections'
 import { PageContainer } from '../../style'
 
 
@@ -16,6 +16,7 @@ export default function Main() {
           <About/>
           <Tecn/>
           <Proyects/>
+          <Contact/>
       </PageContainer>
     </div>
     
