@@ -1,4 +1,4 @@
-import pixelPort from "../../../images/Opera Captura de pantalla_2023-07-27_084205_pf-ecommerce-front-production.up.railway.app.png"
+import pixelPort from "../../../images/PixelPort.png"
 
 
 export const Proyectos = [
@@ -6,6 +6,25 @@ export const Proyectos = [
         id:1,
         name:"Pixel Port",
         image:pixelPort,
-        URL:"https://pf-ecommerce-front-production.up.railway.app/"
-    }
+        URL:"https://pf-ecommerce-front-production.up.railway.app/",
+        repo:"https://github.com/SMiguelA/PF-ECOMMERCE-FRONT"
+    },
+    // {
+    //     id:2,
+    //     name:"Pixel Port",
+    //     image:pixelPort,
+    //     URL:"https://pf-ecommerce-front-production.up.railway.app/"
+    // },
+    // {
+    //     id:3,
+    //     name:"Pixel Port",
+    //     image:pixelPort,
+    //     URL:"https://pf-ecommerce-front-production.up.railway.app/"
+    // },
+    // {
+    //     id:4,
+    //     name:"Pixel Port",
+    //     image:pixelPort,
+    //     URL:"https://pf-ecommerce-front-production.up.railway.app/"
+    // }
 ]
