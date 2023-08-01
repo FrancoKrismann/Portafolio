@@ -14,7 +14,7 @@ export default function Tecn() {
                 Tencology.map((el) => (
                      <CardContainer key={el.id}>
                         <img src={el.image} alt={el.name}/>
-                        <div class="card-text">
+                        <div className="card-text">
                         <span >{el.name}</span>
                         </div>
                     </CardContainer> 
