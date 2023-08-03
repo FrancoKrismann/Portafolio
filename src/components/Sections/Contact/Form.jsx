@@ -29,10 +29,8 @@ export default function Form() {
     const apiKey = "wA2P2eKgLCZLNZpMb";
 
     const { nombre,email, message } = values;
-    console.log(nombre);
     const validationErrors = validationForm(nombre,email, message);
     setErrors(validationErrors);
-    console.log("Errores:",errors);
     if (Object.keys(validationErrors).length > 0) {
       return null
     }
@@ -49,7 +47,6 @@ export default function Form() {
 
   return (
     <FormContainer ref={form} onSubmit={sendEmail}>
-      <h2>Correo</h2>
       <div className="container-inputs">
         <label>Nombre</label>
         <input
@@ -58,7 +55,9 @@ export default function Form() {
           name="nombre"
           onChange={handleInputChange}
         />
+        <div className="container-errors">
         {errors.nombre && <p className='errors'>{errors.nombre}</p>}
+        </div>
       </div>
       <div className="container-inputs">
         <label>Correo</label>
@@ -68,7 +67,9 @@ export default function Form() {
           name="email"
           onChange={handleInputChange}
         />
+        <div className="container-errors">
         {errors.email && <p className='errors'>{errors.email}</p>}
+        </div>
       </div>
       <div className="container-inputs">
         <label>Mensaje</label>
@@ -78,10 +79,11 @@ export default function Form() {
           name="message"
           onChange={handleInputChange}
         />
+        <div className="container-errors">
         {errors.message && <p className='errors'>{errors.message}</p>}
-
+        </div>
       </div>
-      <input type="submit" value="Enviar" />
+      <input className="button-submit" type="submit" value="Enviar" />
     </FormContainer>
   );
 }
