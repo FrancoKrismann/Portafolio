@@ -7,8 +7,12 @@ export const Contactcontainer = styled.div`
   align-content: center;
   flex-direction: column;
   width: 100%;
-  /* height: 30rem; */
+  height: 44rem;
   background-color: #1c2541;
+  
+  @media screen and (max-width: 768px) {
+    height: 90rem;
+  }
 
   .container {
     display: flex;
@@ -39,9 +43,14 @@ export const Contactcontainer = styled.div`
       width: 40rem;
       height: 30rem;
       border: inherit;
-      
+      /* border:1px solid green; */
       border-radius: 10px;
       box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.22);
+
+      @media screen and (max-width: 768px) {
+    width: 22rem;
+    height: 40rem;
+  }
     }
 
     .container-cards {
@@ -124,6 +133,10 @@ export const FormContainer = styled.form`
   border: inherit;
   border-radius: 10px;
   box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.22);
+  
+  @media screen and (max-width: 768px) {
+    width: 22rem;
+  }
 
   .container-inputs {
     display: flex;
