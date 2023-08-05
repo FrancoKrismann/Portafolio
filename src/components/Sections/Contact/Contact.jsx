@@ -7,7 +7,7 @@ import { BsGithub, BsWhatsapp } from "react-icons/bs";
 
 export default function Contact() {
   return (
-    <Contactcontainer>
+    <Contactcontainer id="Contacto">
       <div className="container">
         <div className="container-Title">
           <h3>Contacto</h3>

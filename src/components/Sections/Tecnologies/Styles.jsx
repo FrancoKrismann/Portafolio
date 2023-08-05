@@ -7,10 +7,13 @@ export const Tencnologycontainer = styled.div`
   align-content: center;
   flex-direction: column;
   width: 100%;
+  /* margin:30px 0 0px 0; */
   background-color: #1c2541;
 
   .container {
     width: 80%;
+    margin:30px 0 40px 0;
+
   }
 
   .containerTitle {
@@ -45,6 +48,8 @@ export const Container = styled.div`
   @media screen and (min-width: 1600px) {
     width: 45%;
   }
+
+  
 `;
 
 export const CardContainer = styled.div`

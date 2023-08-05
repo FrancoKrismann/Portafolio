@@ -7,9 +7,9 @@ export const Proyectscontainer = styled.div`
   justify-content: center;
   /* align-items: center; */
   /* align-content: center; */
-  margin: 30px auto;
+  /* margin: 30px auto; */
   width: 100%;
-  /* height: 100px; */
+  /* height: 40rem; */
   /* background-color: #1C2541; */
 
   .container {
@@ -18,6 +18,8 @@ export const Proyectscontainer = styled.div`
     align-items: center;
     width: 80%;
     flex-direction: column;
+    margin:20px 0 40px 0;
+
     /* border: 2px solid green; */
 
     .containerTitle {
@@ -67,6 +69,18 @@ export const ProyectCard = styled.div`
   /* border-radius: inherit; */
   margin: 0;
   
+  @media screen and (max-width: 1921px) {
+      width: 50%;
+    }
+
+  @media screen and (max-width: 1440px) {
+      width: 55%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  
   .container-url {
     display: flex;
     align-items: center;
@@ -79,9 +93,9 @@ export const ProyectCard = styled.div`
     
   }
 
-  @media screen and (min-width: 1440px) {
+  /* @media screen and (min-width: 1440px) {
       width: 40%;
-    }
+    } */
 
   .container-img {
     display: flex;

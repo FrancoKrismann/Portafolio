@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "./styles.module.css"
 import { Home ,About, Tecn, Proyects, Contact} from '../Sections'
 import { PageContainer } from '../../style'
+import { Element } from 'react-scroll';
+
 
 
 
