@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function Proyects() {
   return (
-    <Proyectscontainer id="Proyects">
+    <Proyectscontainer id="Proyectos">
       <div className="container">
         <div className="containerTitle">
           <h3>Proyectos</h3>

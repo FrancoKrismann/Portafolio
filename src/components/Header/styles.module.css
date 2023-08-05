@@ -7,6 +7,6 @@
     /* border: solid 1px black; */
     background-color: #051923;
     height: 90px;
-    z-index: 1;
+    z-index: 99999;
 }
 
