@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content:center;
+    top: 0;
+    /* border: solid 1px black; */
+    background-color: #051923;
+    height: 90px;
+}
+
+.parraf {
+    color:#fff;
+    font-family: Poppins, sans-serif;
+}
