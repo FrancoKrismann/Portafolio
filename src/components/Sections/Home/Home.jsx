@@ -1,6 +1,5 @@
 import React from "react";
 import { HomeContainer } from "../../../style";
-import styles from "./styles.module.css";
 import { useState, useEffect } from "react";
 
 export default function Home() {

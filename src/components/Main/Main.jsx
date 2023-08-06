@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./styles.module.css";
 import { Home, About, Tecn, Proyects, Contact } from "../Sections";
 import { PageContainer } from "../../style";
-import { Toaster } from "react-hot-toast";
 
 export default function Main() {
   return (
