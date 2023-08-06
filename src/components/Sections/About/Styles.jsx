@@ -101,9 +101,14 @@ export const Aboutcontainer = styled.div`
         height: 5rem;
         justify-content: center;
         align-items: center;
+        border:1px solid red;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 900px) {
           height: 8rem;
+        }
+
+        @media screen and (max-width: 556px) {
+          height: 12rem;
         }
 
         @media screen and (max-width: 400px) {
