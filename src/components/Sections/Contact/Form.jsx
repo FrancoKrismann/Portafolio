@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FormContainer } from "./Styles";
 import { validationForm } from "./validation";
+import { Toaster,toast } from "react-hot-toast";
 
 export default function Form() {
   const form = useRef();
@@ -27,16 +28,17 @@ export default function Form() {
     const serviceId = "service_1ygmkrc";
     const templateId = "template_8t0uyic";
     const apiKey = "wA2P2eKgLCZLNZpMb";
-
     const { nombre,email, message } = values;
     const validationErrors = validationForm(nombre,email, message);
     setErrors(validationErrors);
     if (Object.keys(validationErrors).length > 0) {
       return null
     }
-
+    
+    toast.success("Enviado")
     emailjs.sendForm(serviceId, templateId, form.current, apiKey).then(
       (result) => {
+        
         console.log(result.text,"success emailjs send");
       },
       (error) => {
@@ -45,8 +47,39 @@ export default function Form() {
     );
   };
 
+  // const successEmail = () => {
+  //   console.log("Enviado");
+  //   toast.success("Enviado")
+  // }
+
   return (
     <FormContainer ref={form} onSubmit={sendEmail}>
+       <Toaster
+        position="bottom-right"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 5000,
+          style: {
+            background: "#05af8a",
+            color: "#fff",
+            fontSize: 18
+          },
+
+          // Default options for specific types
+          success: {
+            duration: 4000,
+            theme: {
+              primary: "green",
+              secondary: "black",
+            },
+          },
+        }}
+      />
       <div className="container-inputs">
         <label>Nombre</label>
         <input
@@ -83,7 +116,8 @@ export default function Form() {
         {errors.message && <p className='errors'>{errors.message}</p>}
         </div>
       </div>
-      <input className="button-submit" type="submit" value="Enviar" />
+      <input  className="button-submit" type="submit" value="Enviar" />
+
     </FormContainer>
   );
 }
