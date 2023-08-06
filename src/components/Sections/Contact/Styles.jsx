@@ -7,7 +7,7 @@ export const Contactcontainer = styled.div`
   align-content: center;
   flex-direction: column;
   width: 100%;
-  height: 45rem;
+  /* height: 45rem; */
   background-color: #1c2541;
   
   @media screen and (max-width: 768px) {

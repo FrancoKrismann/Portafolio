@@ -21,6 +21,12 @@ export default function Home() {
             <span>Franco Krismann</span>
           </h1>
           <h3>Desarrollador Web Full Stack</h3>
+          <a
+            href="https://drive.google.com/file/d/1ra9EevdRdqDXRV1Ge8c4fy2SqaGm_OuB/view?usp=sharing"
+            className="container-cv"
+          >
+            <button>CV</button>
+          </a>
         </div>
       </div>
     </HomeContainer>
